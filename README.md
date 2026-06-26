@@ -9,8 +9,12 @@ State Space Models (SSMs) represent a revolutionary paradigm shift in sequence m
 
 The technical progression of SSMs reflects a transition from classical mathematical physics to linear time-invariant deep layers, moving toward modern data-dependent dynamic routing engines.
 
-[Classical Control Theory] ----> [Linear Time-Invariant (S4, 2021)] ----> [Data-Dependent Dynamic SSMs (Mamba, 2023+)](Continuous Kalman / ODEs)       (HiPPO Matrices / Fixed Kernels)          (Selective Scanning / Fused Hardware Kernels)
-
+```mermaid
+flowchart LR
+    A["Classical Control Theory<br/>(Continuous Kalman / ODEs)"]
+    --> B["Linear Time-Invariant (S4, 2021)<br/>(HiPPO Matrices / Fixed Kernels)"]
+    --> C["Data-Dependent Dynamic SSMs (Mamba, 2023+)<br/>(Selective Scanning / Fused Hardware Kernels)"]
+```
 
 *   **The Continuous Control Era (Classical Roots)**
     *   *Concept:* Built upon continuous-time differential equations and Kalman filtering frameworks from the 20th century. Used to model physical systems where hidden states track changes over continuous timelines.
@@ -76,4 +80,3 @@ Deploying State Space architectures inside commercial pipelines changes the comp
 *   **Continuous Streaming Time-Series & Audio Analytics**
     *   *Application:* Monitors continuous high-frequency waves (such as seismic sensors, cardiac ICU telemetry, or raw acoustics). Because discrete discretization parameters ($\Delta$) act as natural signal sampling filters, SSMs track shifting continuous wave trajectories without data interpolation gaps.
 
-    
