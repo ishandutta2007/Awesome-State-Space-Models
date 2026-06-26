@@ -1,11 +1,31 @@
-# Awesome-State-Space-Models
-## State Space Models (SSMs) in AI: Evolution, Variants, & Applications
+# Awesome State Space Models 🚀
 
-State Space Models (SSMs) represent a revolutionary paradigm shift in sequence modeling, offering a mathematically rigorous alternative to both Recurrent Neural Networks (RNNs) and Transformers. Originally derived from classical control theory, modern deep learning SSMs map a continuous 1D input signal $x(t)$ to an output signal $y(t)$ through an intermediate latent state $h(t)$. By parameterizing these differential equations into discrete structures, advanced SSMs achieve **linear scaling ($O(N)$) with sequence length** and maintain a **constant-size memory footprint during inference**, bypassing the quadratic computational and memory bottlenecks ($O(N^2)$) that plague the Transformer's self-attention mechanism.
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome State Space Models Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a><a href="https://github.com/ishandutta2007/Awesome-State-Space-Models/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-State-Space-Models?style=flat-square&logo=github" alt="GitHub stars" /></a><a href="https://github.com/ishandutta2007/Awesome-State-Space-Models/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-State-Space-Models?style=flat-square&logo=git" alt="GitHub forks" /></a><a href="https://github.com/ishandutta2007/Awesome-State-Space-Models/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-State-Space-Models?style=flat-square" alt="License" /></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+## State Space Models (SSMs) in AI: Evolution, Variants, & Applications 🧠
+
+State Space Models (SSMs) represent a revolutionary paradigm shift in sequence modeling, offering a mathematically rigorous alternative to both Recurrent Neural Networks (RNNs) and Transformers. Originally derived from classical control theory, modern deep learning SSMs map a continuous 1D input signal $x(t)$ to an output signal $y(t)$ through an intermediate latent state $h(t)$. 
+
+By parameterizing these differential equations into discrete structures, advanced SSMs achieve **linear scaling ($O(N)$) with sequence length** and maintain a **constant-size memory footprint during inference**, bypassing the quadratic computational and memory bottlenecks ($O(N^2)$) that plague the Transformer's self-attention mechanism.
 
 ---
 
-## 1. The Chronological Evolution
+### Table of Contents 📂
+- [1. The Chronological Evolution ⏳](#1-the-chronological-evolution-⏳)
+- [2. Core Functional & Algorithmic Variants ⚙️](#2-core-functional--algorithmic-variants-⚙️)
+- [3. High-Yield Architectural Hybrid Types 🔀](#3-high-yield-architectural-hybrid-types-🔀)
+- [4. Production Engineering Benefits & Trade-Offs ⚖️](#4-production-engineering-benefits--trade-offs-⚖️)
+- [5. Frontier Real-World Applications 🌍](#5-frontier-real-world-applications-🌍)
+
+---
+
+## 1. The Chronological Evolution ⏳
 
 The technical progression of SSMs reflects a transition from classical mathematical physics to linear time-invariant deep layers, moving toward modern data-dependent dynamic routing engines.
 
@@ -24,7 +44,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Algorithmic Variants
+## 2. Core Functional & Algorithmic Variants ⚙️
 
 Deep learning SSMs are strictly categorized based on how their state transition parameters ($A, B, C$) behave across chronological sequences.
 
@@ -36,7 +56,7 @@ Deep learning SSMs are strictly categorized based on how their state transition 
 
 ---
 
-## 3. High-Yield Architectural Hybrid Types
+## 3. High-Yield Architectural Hybrid Types 🔀
 
 Because SSMs excel at linear sequence tracking but lack the absolute cross-token retrieval fidelity of full attention, modern systems deploy hybrid combinations.
 
@@ -47,7 +67,7 @@ Because SSMs excel at linear sequence tracking but lack the absolute cross-token
 
 ---
 
-## 4. Production Engineering Benefits & Trade-Offs
+## 4. Production Engineering Benefits & Trade-Offs ⚖️
 
 Deploying State Space architectures inside commercial pipelines changes the compute and serving dynamics of enterprise infrastructure.
 
@@ -58,7 +78,7 @@ Deploying State Space architectures inside commercial pipelines changes the comp
 
 ---
 
-## 5. Frontier Real-World Applications
+## 5. Frontier Real-World Applications 🌍
 
 | Frontier Application | Year | First Paper | Details |
 | :--- | :--- | :--- | :--- |

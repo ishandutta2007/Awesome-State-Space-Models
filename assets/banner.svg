@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%">
+  <!-- Definitions for gradients and filters -->
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="240" rx="12" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.1">
+    <path d="M 0,20 L 800,20 M 0,40 L 800,40 M 0,60 L 800,60 M 0,80 L 800,80 M 0,100 L 800,100 M 0,120 L 800,120 M 0,140 L 800,140 M 0,160 L 800,160 M 0,180 L 800,180 M 0,200 L 800,200 M 0,220 L 800,220" stroke="#cccccc" stroke-width="0.5" />
+    <path d="M 40,0 L 40,240 M 80,0 L 80,240 M 120,0 L 120,240 M 160,0 L 160,240 M 200,0 L 200,240 M 240,0 L 240,240 M 280,0 L 280,240 M 320,0 L 320,240 M 360,0 L 360,240 M 400,0 L 400,240 M 440,0 L 440,240 M 480,0 L 480,240 M 520,0 L 520,240 M 560,0 L 560,240 M 600,0 L 600,240 M 640,0 L 640,240 M 680,0 L 680,240 M 720,0 L 720,240 M 760,0 L 760,240" stroke="#cccccc" stroke-width="0.5" />
+  </g>
+
+  <!-- Decorative Abstract State Space Trajectory -->
+  <g stroke="url(#glow-grad)" stroke-width="2.5" fill="none" opacity="0.6" filter="url(#glow)">
+    <!-- Continuous Sine-like Curve -->
+    <path d="M 50,180 C 120,180 180,60 250,60 C 320,60 380,180 450,180 C 520,180 580,60 650,60 C 720,60 750,120 780,120" />
+    <!-- Discretized steps (vertical bar indicators) -->
+    <path d="M 100,180 L 100,140 M 150,180 L 150,90 M 200,60 L 200,100 M 250,60 L 250,120 M 300,60 L 300,140 M 350,180 L 350,120 M 400,180 L 400,100 M 450,180 L 450,130 M 500,180 L 500,90 M 550,60 L 550,100 M 600,60 L 600,120 M 650,60 L 650,140" stroke="#3b82f6" stroke-width="1.5" opacity="0.5" />
+  </g>
+
+  <!-- Central Graphic (Control Loop / State Transition) -->
+  <g transform="translate(680, 120)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#8b5cf6" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="5" fill="#ec4899" />
+    <path d="M -25,0 L 25,0 M 0,-25 L 0,25" stroke="#3b82f6" stroke-width="1" opacity="0.4" />
+    <path d="M -45,-15 Q -25,-40 0,-35" fill="none" stroke="#ec4899" stroke-width="1.5" />
+  </g>
+
+  <!-- Title & Typography -->
+  <g transform="translate(50, 95)">
+    <!-- Glowing title block -->
+    <text x="0" y="0" font-family="'Outfit', 'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="34" fill="#ffffff" letter-spacing="1">AWESOME STATE SPACE MODELS</text>
+  </g>
+
+  <g transform="translate(50, 135)">
+    <text x="0" y="0" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="400" font-size="14" fill="#94a3b8" letter-spacing="0.5">Evolution, Variants, &amp; Applications of deep learning SSMs</text>
+  </g>
+
+  <!-- Tech tags/chips in the banner -->
+  <g transform="translate(50, 175)" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="11" fill="#3b82f6">
+    <rect x="0" y="0" width="80" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="40" y="15" text-anchor="middle">S4 / LTI</text>
+
+    <g transform="translate(90, 0)">
+      <rect x="0" y="0" width="100" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="50" y="15" text-anchor="middle" fill="#8b5cf6">MAMBA / LTV</text>
+    </g>
+
+    <g transform="translate(200, 0)">
+      <rect x="0" y="0" width="90" height="22" rx="11" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="45" y="15" text-anchor="middle" fill="#ec4899">SSD / DUALS</text>
+    </g>
+  </g>
+</svg>
