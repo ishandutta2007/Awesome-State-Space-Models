@@ -86,3 +86,15 @@ Deploying State Space architectures inside commercial pipelines changes the comp
 | [**High-Resolution 1D Biomedical Genomic Mapping**](./details/high-resolution-1d-biomedical-genomic-mapping.md) | 2024 | [Schiff et al. (2024)](https://arxiv.org/abs/2403.03234) | **Application:** Evaluates raw DNA and RNA base-pair strands ($A, C, G, T$). Because genomic data spans hundreds of thousands of tokens where mutations display immense long-range sequence dependencies, models like **Caduceus** leverage bidirectional SSM layouts to track macro-molecular mutations efficiently. |
 | [**Continuous Streaming Time-Series & Audio Analytics**](./details/continuous-streaming-time-series-audio-analytics.md) | 2022 | [Goel et al. (2022)](https://arxiv.org/abs/2202.09729) | **Application:** Monitors continuous high-frequency waves (such as seismic sensors, cardiac ICU telemetry, or raw acoustics). Because discrete discretization parameters ($\Delta$) act as natural signal sampling filters, SSMs track shifting continuous wave trajectories without data interpolation gaps. |
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-State-Space-Models&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-State-Space-Models&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-State-Space-Models&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-State-Space-Models&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
+
